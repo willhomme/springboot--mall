@@ -3,7 +3,11 @@ package com.will.springbootmall.dao;
 import com.will.springbootmall.dto.ProductRequest;
 import com.will.springbootmall.model.Product;
 
+import java.util.List;
+
 public interface ProductDao {
+
+    List<Product> getProducts();
 
     Product getProductById(Integer productId);
 
